@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+    <div id="Main1">
+
+        <div id="deposit" class="LeftOne">
+        <h2>Deposit Amount</h2>
+        <input type="number" id="damount" placeholder="         Enter amount" />
+        <br/><br/>
+        <button onclick="Deposit()">Deposit</button>
+        </div>
+
+        <div id="withdrew" class="LeftOne">
+        <h2>Withdraw Amount</h2>
+        <input type="number" id="wamount" placeholder="          Enter amount" />
+        <br/><br/>
+        <button onclick="withdraw()">Withdraw</button>
+        </div>
+
+        <div id="balance" class="LeftOne">
+        <h2>Check Balance</h2>
+        <button onclick="Balance()">Show Balance</button>
+        <p id="dbalance"></p>
+        </div>
+    </div>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>

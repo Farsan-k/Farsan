@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#Main1{
+    height: 500px;
+    width: 700px;
+    background-color: transparent;
+    display: flex;
+    gap: 2px;
+}
+
+
+.LeftOne{
+    width: 500px;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.LeftOne button{
+    border-radius: 5px;
+    border: 0;
+    width: 150px;
+    height: 30px;
+}
+.LeftOne button:hover{
+
+    background-color: black;
+    color: white;
+}
+.LeftOne input{
+    border-radius: 5px;
+    border: 0;
+    height: 30px;
+}
+.LeftOne:hover{
+    background-color: aquamarine;
+
+}
