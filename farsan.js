@@ -57,7 +57,7 @@ window.onscroll = () => {
 
 
         const typed = new Typed('.text',{
-            strings: ['Frontend Developer..!','Data Scientist..!', 'Data Analyst..!'],
+            strings: ['Machine Learning Engineering..!','Data Scientist..!', 'Data Analyst..!'],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,
@@ -83,6 +83,7 @@ window.onscroll = () => {
 
       
         
+
 
 
 
