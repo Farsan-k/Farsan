@@ -6,15 +6,6 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-
-
-
-
-
-
-
-
-
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.NavOne a');
 
@@ -28,64 +19,50 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('.NavOne a[href*=' + id + ']').classList.add('active');
-                
-                });
-            };
-        });
-        let header = document.querySelector('header');
+                document
+                    .querySelector('.NavOne a[href*=' + id + ']')
+                    .classList.add('active');
+            });
+        }
+    });
 
-        header.classList.toggle('sticky',window.scrollY > 100);
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
 
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+};
 
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
+ScrollReveal({
+    //  reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.HomePage1, .Head', { orgin: 'top' });
+ScrollReveal().reveal('.img1, .Skill, .ProjectBox, .ContactPage form', { origin: 'bottom' });
+ScrollReveal().reveal('.HomePage1 h1, .img2', { origin: 'left' });
+
+const typed = new Typed('.text', {
+    strings: ['Data Scientist...!', 'Data Analyst...!', 'Machine Learning Engineering...!'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
+function sendMail() {
+    const params = {
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        phone: document.querySelector('#Phone').value,
+        subject: document.querySelector('#Subject').value,
+        message: document.querySelector('#Message').value,
     };
 
-
-
-    ScrollReveal({
-        //  reset: true,
-         distance:'80px',
-         duration: 2000,
-         delay:200
-        });
-
-        ScrollReveal().reveal('.HomePage1, .Head', { orgin: 'top' });
-        ScrollReveal().reveal('.img1, .Skill, .ProjectBox, .ContactPage form', { origin: 'bottom' });
-        ScrollReveal().reveal('.HomePage1 h1, .img2', { origin: 'left' });
-
-
-        const typed = new Typed('.text',{
-            strings: ['Data Scientist...!', 'Data Analyst...!', 'Machine Learning Engineering...!'],
-            typeSpeed: 100,
-            backSpeed: 100,
-            backDelay: 1000,
-            loop: true
-
-        });
-
-
-
-        function sendMail(){
-            const params = {
-                name: document.querySelector('#name').value,
-                email: document.querySelector('#email').value,
-                phone: document.querySelector('#Phone').value,
-                subject: document.querySelector('#Subject').value,
-                message: document.querySelector('#Message').value,
-            };
-
-        emailjs
-        .send("service_0rvyrya", "template_0ej8lbj",params,)
-        .then(() => alert("your message sent succefully").catch(() => alert("Email Not Sent")));
-        }
-
-      
-        
-
-
-
-
-
-
+    emailjs
+        .send("service_0rvyrya", "template_0ej8lbj", params)
+        .then(() => alert("your message sent succefully"))
+        .catch(() => alert("Email Not Sent"));
+}
