@@ -39,7 +39,7 @@ section{
     align-items: center;
     z-index: 100;
 }
-.header .sticky{
+.header.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 
 }
@@ -56,7 +56,7 @@ section{
     transition: .3s;
 }
 .NavOne a:hover,
-.NavOne a:active{
+.NavOne a.active{
     color: var(--main-color);
 }
 #menu-icon{
@@ -383,7 +383,7 @@ span{
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, rgba(0, 0, 0, .2));
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
     }
     .NavOne.active{
