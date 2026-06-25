@@ -9,10 +9,10 @@
     box-sizing: border-box;
 }
 :root{
-    --bg-color:#F5F7FA ;
-    --second-bg-color: #E4EBF5;
-    --text-color:#1C1C1E;
-    --main-color:#2E8B57;
+    --bg-color:#0D0D0D ;
+    --second-bg-color: #111827;
+    --text-color:#E0E0E0;
+    --main-color:#00BFFF;
 
 }
 html{
@@ -40,7 +40,7 @@ section{
     z-index: 100;
 }
 .header.sticky{
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    border-bottom: .1rem solid rgba(0, 191, 255, .2);
 
 }
 .logo{
@@ -70,9 +70,8 @@ section{
     align-items: center;
 }
 .img1 img{
-    width: 35vw;
+    width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
-    /* box-shadow:0 0 1rem var(--main-color); */
 }
 @keyframes floatImage{
     0%{
@@ -105,7 +104,7 @@ span{
 }
 .HomePage1 p{
     font-size: 1.6rem;
-
+    text-align: justify;
 }
 .MediaIcon a{
     display: inline-flex;
@@ -165,6 +164,7 @@ span{
 .About p{
     font-size: 1.6rem;
     margin:2rem 0 3rem ;
+    text-align: justify;
 }
 .SkillPage h2{
     margin-bottom: 5rem;
@@ -201,7 +201,7 @@ span{
 .SkillBox p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-    text-align: center;
+    text-align: justify;
 }
 .ProjectPage{
     background: var(--second-bg-color);
@@ -335,10 +335,6 @@ span{
 }
 
 
-
-
-
-
 @media (max-width: 1200px){
     html{
         font-size: 55%;
@@ -382,7 +378,7 @@ span{
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
-        border-top: rgba(0, 0, 0, .2);
+        border-top: rgba(0, 191, 255, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
     }
@@ -456,4 +452,3 @@ span{
 
     }
 }
-
