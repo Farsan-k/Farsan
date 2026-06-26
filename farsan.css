@@ -68,6 +68,7 @@ section{
     display: flex;
     justify-content:center ;
     align-items: center;
+    gap: 10rem;
 }
 .img1 img{
     width: 25vw;
