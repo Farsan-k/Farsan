@@ -70,8 +70,9 @@ ScrollReveal().reveal('.HomePage1 h1, .img2', {
 const typed = new Typed('.text', {
     strings: [
         'Data Scientist...!',
-        'Data Analyst...!',
-        'Machine Learning Engineer...!'
+        'AI and ML Engineers...!',
+        'Data Analyst...!'
+        
     ],
     typeSpeed: 100,
     backSpeed: 100,
