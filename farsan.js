@@ -70,7 +70,7 @@ ScrollReveal().reveal('.HomePage1 h1, .img2', {
 const typed = new Typed('.text', {
     strings: [
         'Data Scientist...!',
-        'AI and ML Engineers...!',
+        'AI and ML Engineer...!',
         'Data Analyst...!'
         
     ],
